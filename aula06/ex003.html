@@ -9,9 +9,10 @@
 <body>
     Hello World!
     <script>
-        window.alert('Minha primeira mensagem')
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual é seu nome?')
+        var n1 = Number(window.prompt('Digite o primeiro número'))
+        var n2 = Number(window.prompt('Digite o segundo número'))
+        var s = n1 + n2
+        window.alert(`A soma entre o ${n1} e o ${n2} é igual a ${s}`)
     </script>
 </body>
 </html>
