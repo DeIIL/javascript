@@ -8,8 +8,19 @@
 </head>
 <body>
     <script>
-        var nome = window.prompt('Digite seu nome')
-        document.writeln(`Seu nome tem ${nome.length} letras`)
+        var l1 = window.prompt('Digite o tamanho do primeiro lado')
+        var l2 = window.prompt('Digite o tamanho do segundo lado')
+        var l3 = window.prompt('Digite o tamanho do terceiro lado')
+        if ((l1 > l2 + l3) || (l2 > l3 + l1) || (l3 > l1 + l2)){
+            window.alert('A figura não é um triangulo');
+        }
+        else if((l1 == l2) && (l2 == l3)){
+            window.alert('É um triâgulo EQUILÁTERO')
+        } else if((l1 == l2) || (l2 == l3) || (l3 == l1)){
+            window.alert('É um triâgulo ISÓSCELES')
+        } else{
+            window.alert('É um triâgulo ESCALENO')
+        }
     </script>
 </body>
 </html>
